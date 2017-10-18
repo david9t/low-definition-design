@@ -1,0 +1,32 @@
+/* TYPOGRAPHY LIMITS */
+
+
+/* LIMITING TEXT SPACING */
+
+*:not(.grid) + *:not(.grid):not(.grid__item):not(.block) {
+  .text--no-spacing & {
+    margin-top: 0;
+  }
+
+  .text--tight-spacing & {
+    margin-top: $tight;
+  }
+
+  .text--base-spacing & {
+    margin-top: $base;
+  }
+}
+
+.grid__item * + *:not(.block) {
+  .text--no-spacing & {
+    margin-top: 0;
+  }
+
+  .text--tight-spacing & {
+    margin-top: $tight;
+  }
+
+  .text--base-spacing & {
+    margin-top: $base;
+  }
+}

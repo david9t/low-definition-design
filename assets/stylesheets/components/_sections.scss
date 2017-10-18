@@ -1,0 +1,9 @@
+/* SECTIONS */
+
+.section {
+  overflow: hidden;
+
+  &--separated {
+    @include standard-border;
+  }
+}

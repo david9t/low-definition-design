@@ -1,0 +1,76 @@
+/* FORMS */
+
+form, fieldset {
+  * + & {
+    margin-top: $loose;
+  }
+
+  & + * {
+    margin-top: $loose;
+  }
+
+  * + {
+    & label, & h1, & h2, & h3, & h4, & h5, & h6 {
+      margin-top: $loose;
+    }
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+* + legend {
+  margin-top: $medium;
+}
+
+input, label {
+  display: block;
+  font-size: $standard;
+}
+
+label {
+  & + p {
+    margin-top: $tight;
+  }
+}
+
+input, textarea, select {
+  border: 1px solid #888;
+  font-family: $base-font-family;
+  font-size: 1em;
+  margin-top: $small;
+  padding: $small;
+  width: 100%;
+
+  & + .small, & + p {
+    margin-top: $tight;
+  }
+
+  &[type="radio"], &[type="checkbox"] {
+    display: inline-block;
+    height: $base;
+    margin-right: $small;
+    margin-top: $small;
+    vertical-align: middle;
+    width: $base;
+
+    & + label {
+      display: inline-block;
+      margin-top: $small;
+      vertical-align: middle;
+    }
+
+    & + p {
+      display: inline-block;
+      left: 0;
+      margin-right: $base;
+      margin-top: $small;
+      vertical-align: middle;
+    }
+  }
+}
+
+option {
+  margin-top: 0;
+}

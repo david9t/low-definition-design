@@ -1,0 +1,207 @@
+/* BREAKPOINTS: Many breakpoints, and small increments between them, means lots of control over our designs. */
+
+
+$breakpoint-increment: 5em; /* STARTING AT 0, THE INCREMENT BETWEEN EACH BREAKPOINT */
+
+$breakpoint-0: 0;
+@mixin breakpoint-0 {
+  @media only screen and (min-width: #{$breakpoint-0}) {
+    @content;
+  }
+}
+
+$breakpoint-1: $breakpoint-increment + $breakpoint-0;
+@mixin breakpoint-1 {
+  @media only screen and (min-width: #{$breakpoint-1}) {
+    @content;
+  }
+}
+
+$breakpoint-2: $breakpoint-increment + $breakpoint-1;
+@mixin breakpoint-2 {
+  @media only screen and (min-width: #{$breakpoint-2}) {
+    @content;
+  }
+}
+
+$breakpoint-3: $breakpoint-increment + $breakpoint-2;
+@mixin breakpoint-3 {
+  @media only screen and (min-width: #{$breakpoint-3}) {
+    @content;
+  }
+}
+
+$breakpoint-4: $breakpoint-increment + $breakpoint-3;
+@mixin breakpoint-4 {
+  @media only screen and (min-width: #{$breakpoint-4}) {
+    @content;
+  }
+}
+
+$breakpoint-5: $breakpoint-increment + $breakpoint-4;
+@mixin breakpoint-5 {
+  @media only screen and (min-width: #{$breakpoint-5}) {
+    @content;
+  }
+}
+
+$breakpoint-6: $breakpoint-increment + $breakpoint-5;
+@mixin breakpoint-6 {
+  @media only screen and (min-width: #{$breakpoint-6}) {
+    @content;
+  }
+}
+
+$breakpoint-7: $breakpoint-increment + $breakpoint-6;
+@mixin breakpoint-7 {
+  @media only screen and (min-width: #{$breakpoint-7}) {
+    @content;
+  }
+}
+
+$breakpoint-8: $breakpoint-increment + $breakpoint-7;
+@mixin breakpoint-8 {
+  @media only screen and (min-width: #{$breakpoint-8}) {
+    @content;
+  }
+}
+
+$breakpoint-9: $breakpoint-increment + $breakpoint-8;
+@mixin breakpoint-9 {
+  @media only screen and (min-width: #{$breakpoint-9}) {
+    @content;
+  }
+}
+
+$breakpoint-10: $breakpoint-increment + $breakpoint-9;
+@mixin breakpoint-10 {
+  @media only screen and (min-width: #{$breakpoint-10}) {
+    @content;
+  }
+}
+
+$breakpoint-11: $breakpoint-increment + $breakpoint-10;
+@mixin breakpoint-11 {
+  @media only screen and (min-width: #{$breakpoint-11}) {
+    @content;
+  }
+}
+
+$breakpoint-12: $breakpoint-increment + $breakpoint-11;
+@mixin breakpoint-12 {
+  @media only screen and (min-width: #{$breakpoint-12}) {
+    @content;
+  }
+}
+
+$breakpoint-13: $breakpoint-increment + $breakpoint-12;
+@mixin breakpoint-13 {
+  @media only screen and (min-width: #{$breakpoint-13}) {
+    @content;
+  }
+}
+
+$breakpoint-14: $breakpoint-increment + $breakpoint-13;
+@mixin breakpoint-14 {
+  @media only screen and (min-width: #{$breakpoint-14}) {
+    @content;
+  }
+}
+
+$breakpoint-15: $breakpoint-increment + $breakpoint-14;
+@mixin breakpoint-15 {
+  @media only screen and (min-width: #{$breakpoint-15}) {
+    @content;
+  }
+}
+
+$breakpoint-16: $breakpoint-increment + $breakpoint-15;
+@mixin breakpoint-16 {
+  @media only screen and (min-width: #{$breakpoint-16}) {
+    @content;
+  }
+}
+
+$breakpoint-17: $breakpoint-increment + $breakpoint-16;
+@mixin breakpoint-17 {
+  @media only screen and (min-width: #{$breakpoint-17}) {
+    @content;
+  }
+}
+
+$breakpoint-18: $breakpoint-increment + $breakpoint-17;
+@mixin breakpoint-18 {
+  @media only screen and (min-width: #{$breakpoint-18}) {
+    @content;
+  }
+}
+
+$breakpoint-19: $breakpoint-increment + $breakpoint-18;
+@mixin breakpoint-19 {
+  @media only screen and (min-width: #{$breakpoint-19}) {
+    @content;
+  }
+}
+
+$breakpoint-20: $breakpoint-increment + $breakpoint-19;
+@mixin breakpoint-20 {
+  @media only screen and (min-width: #{$breakpoint-20}) {
+    @content;
+  }
+}
+
+$breakpoint-21: $breakpoint-increment + $breakpoint-20;
+@mixin breakpoint-21 {
+  @media only screen and (min-width: #{$breakpoint-21}) {
+    @content;
+  }
+}
+
+$breakpoint-22: $breakpoint-increment + $breakpoint-21;
+@mixin breakpoint-22 {
+  @media only screen and (min-width: #{$breakpoint-22}) {
+    @content;
+  }
+}
+
+$breakpoint-23: $breakpoint-increment + $breakpoint-22;
+@mixin breakpoint-23 {
+  @media only screen and (min-width: #{$breakpoint-23}) {
+    @content;
+  }
+}
+
+$breakpoint-24: $breakpoint-increment + $breakpoint-23;
+@mixin breakpoint-24 {
+  @media only screen and (min-width: #{$breakpoint-24}) {
+    @content;
+  }
+}
+
+$breakpoint-25: $breakpoint-increment + $breakpoint-24;
+@mixin breakpoint-25 {
+  @media only screen and (min-width: #{$breakpoint-25}) {
+    @content;
+  }
+}
+
+$breakpoint-26: $breakpoint-increment + $breakpoint-25;
+@mixin breakpoint-26 {
+  @media only screen and (min-width: #{$breakpoint-26}) {
+    @content;
+  }
+}
+
+$breakpoint-27: $breakpoint-increment + $breakpoint-26;
+@mixin breakpoint-27 {
+  @media only screen and (min-width: #{$breakpoint-27}) {
+    @content;
+  }
+}
+
+$breakpoint-28: $breakpoint-increment + $breakpoint-27;
+@mixin breakpoint-28 {
+  @media only screen and (min-width: #{$breakpoint-28}) {
+    @content;
+  }
+}

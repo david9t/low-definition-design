@@ -1,0 +1,16 @@
+/* BLOCKS */
+
+.block {
+  @include standard-border;
+  color: $base-text-color;
+
+  &:hover {
+    color: $base-text-color;
+  }
+}
+
+.block--card {
+  .block__title, .block__excerpt, .block__cta {
+    color: $base-text-color;
+  }
+}

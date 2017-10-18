@@ -1,0 +1,59 @@
+/* UTILITY MENU */
+
+.utility {
+  @include standard-border;
+  background: $base-background-color;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  @include breakpoint-6 {
+    bottom: auto;
+    top: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+
+    @include breakpoint-6 {
+      justify-content: flex-start;
+    }
+  }
+
+  &__menu-item {
+    font-size: $small;
+    list-style: none;
+    margin-left: 0;
+    margin-right: $medium;
+    margin-top: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+}
+
+.site-wrapper {
+  height: 100%;
+
+  @include breakpoint-6 {
+    margin-top: $small + $small + $standard;
+  }
+}
+
+.legal-footer {
+  margin-bottom: $small + $small + $standard;
+
+  @include breakpoint-6 {
+    margin-bottom: 0;
+  }
+}

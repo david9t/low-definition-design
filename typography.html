@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lo-Def Design</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="section section--separated section--base-spacing header">
+        <div class="container">
+          <img src="assets/images/image.jpg" alt="" class="logo" />
+          <a href="#footer" class="btn header__menu-button">Menu</a>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="/documentation">Home</a></li>
+            <li class="header__menu-item"><a href="/documentation/typography">Typography</a></li>
+            <li class="header__menu-item"><a href="/documentation/structure">Structure</a></li>
+            <li class="header__menu-item"><a href="/documentation/grids">Grids</a></li>
+            <li class="header__menu-item"><a href="/documentation/components">Components</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <section class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1 class="x-large">Typography</h1>
+        <p class="standard">The LO-DEF approach to typography, it's foundation and its ability to evolve throughout a design.</p>
+        <ul>
+          <li><a href="#1">Basic, natural typography</a></li>
+          <li><a href="#2">Text lockups</a></li>
+          <li><a href="#3">Spacing limits</a></li>
+          <li><a href="#4">Long-form typography</a></li>
+          <li><a href="#5">Overrides</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="1" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Basic, natural typography</h1>
+        <p class="standard">Globally defined, good practice typographic rules.</p>
+        <p>If nothing else, these basic principles will ensure a good quality, typogaphy-first approach to your design.</p>
+        <h2>Modular scale</h2>
+        <p>LO-DEF uses <a href="http://www.modularscale.com/?16&px&1.5" target="_blank">modular-scaled</a> proportions between body copy and each level of heading. Inspired by typography-first thinking, modular scale values are also used when it comes to layout and spacing.</p>
+        <h2>Global good practice</h2>
+        <p>Loosely inspired by the visual order of baseline grids, LO-DEF is based on a <a href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls" target="_blank">unified vertical rhythm</a> between all types of text.</p>
+        <p>We also set automatic limits to line length, based on ideal reading and scanning habits.</p>
+      </div>
+    </section>
+
+    <section id="2" class="section section--supersized-spacing">
+      <div class="container">
+        <h1>Text lockups</h1>
+
+        <h2>Lockup</h2>
+        <div class="block block--oversized-spacing text--lockup">
+          <div class="container">
+            <p class="text--highlight">This block has a "lockup" class applied to it. This means all text, regardless of size, will be limited to the same line-length.</p>
+            <h2 class="text--highlight">Here's an example heading. It's line-length won't exceed that of any other text within the same area</h2>
+            <h3 class="text--highlight">This heading also won't exceed the maximum horizontal width shared by all text in this section</h3>
+          </div>
+        </div>
+
+        <h2>No lockup</h2>
+        <p>To illustrate the difference, here's the same SECTION again, <em>without</em> the "lockup" class applied:</p>
+        <div class="block block--oversized-spacing">
+          <div class="container">
+            <p class="text--highlight">This block does not have the "lockup" class applied to it. This means all text will be limited only by its own natural maximum line-length.</p>
+            <h2 class="text--highlight">Here's an example heading. It's line-length <em>will</em> now exceed that of the other text within the same area</h2>
+            <h3 class="text--highlight">This heading also will be bound by a different maximum horizontal width, based on its own font size</h3>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply this class to sections or blocks:</p>
+            <ul>
+              <li><code>.text--lockup</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="3" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Spacing limits</h1>
+        <p>We can go against the natural flow of text spacing and impose specific limits.</p>
+
+        <ul class="grid grid--limit-3 grid--oversized-spacing">
+          <li class="grid__item breakpoint-0-full breakpoint-11-one-third">
+            <div class="block block--luxury-spacing text--base-spacing">
+              <div class="container">
+                <h2>Base spacing</h2>
+                <p>This BLOCK is limited to base spacing. It will resist an expansion of global vertical rhythm that generally occurs at large desktop sizes.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </li>
+          <li class="grid__item breakpoint-0-full breakpoint-11-one-third">
+            <div class="block block--luxury-spacing text--tight-spacing">
+              <div class="container">
+                <h2>Tight spacing</h2>
+                <p>This BLOCK is limited to tight spacing. The space between text is a value smaller than normal on our modular scale.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </li>
+          <li class="grid__item breakpoint-0-full breakpoint-11-one-third">
+            <div class="block block--luxury-spacing text--no-spacing">
+              <div class="container">
+                <h2>No spacing</h2>
+                <p>This BLOCK involves no space at all between text.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to sections or blocks:</p>
+            <ul>
+              <li><code>.text--base-spacing</code></li>
+              <li><code>.text--tight-spacing</code></li>
+              <li><code>.text--no-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="4" class="section section--supersized-spacing long-form lockup">
+      <div class="container">
+        <h1>Long-form typography</h1>
+        <p class="standard">For longer stretches of content, like articles, we can bring in extra proxomity rules. This helps the eye scan between headings and sub-sections of content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <blockquote>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</blockquote>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="assets/images/image.jpg" alt="" />
+
+        <h2>Cupidatat non proident</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <h3>Excepteur sint occaecat cupidatat non proident excepteur sint occaecat cupidatat non proident</h3>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        <figure>
+          <img src="assets/images/image.jpg" alt="" />
+          <figcaption>Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
+        </figure>
+        <img src="assets/images/image.jpg" alt="" />
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        <h4>Cupidatat non proident</h4>
+        <p>Mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <h2>Voluptate velit esse cillum dolore eu fugiat nulla pariatur</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <h2>Dolore eu fugiat nulla pariatur</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr />
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="assets/images/image.jpg" alt="" />
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply this class to sections or blocks:</p>
+            <ul>
+              <li><code>.long-form</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="5" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Overrides</h1>
+        <p>We want to mark up our headings with the appropriate heading tag. But we may then want override the size.</p>
+        <p>Perhaps it makes sense, in certain situations, for an h1 and an h2 to display as the same size.</p>
+        <p>Using heading override classes we can achieve this:</p>
+        <h1>This is an h1 heading</h1>
+        <h2 class="large">This is an h2 heading, set to show as large as a typical h1</h2>
+        <h2>This is an h2 heading</h2>
+        <h3 class="medium">This is an h3 heading, set to show as large as a typical h2</h3>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to headings or paragraphs:</p>
+            <ul>
+              <li><code>.standard</code></li>
+              <li><code>.medium</code></li>
+              <li><code>.large</code></li>
+              <li><code>.x-large</code></li>
+              <li><code>.xx-large</code></li>
+              <li><code>.xxx-large</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>

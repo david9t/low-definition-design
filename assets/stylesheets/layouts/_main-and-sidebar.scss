@@ -1,0 +1,23 @@
+/* MAIN CONTENT AND SIDEBAR */
+
+.main-and-sidebar {
+  &__main {
+      order: 2;
+      width: $full !important;
+
+      @include breakpoint-12 {
+        order: 1;
+        width: $two-thirds !important;
+      }
+  }
+
+  &__sidebar {
+    order: 1;
+    width: $full !important;
+
+    @include breakpoint-12 {
+      order: 2;
+      width: $one-third !important;
+    }
+  }
+}

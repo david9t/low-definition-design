@@ -1,0 +1,34 @@
+/* FOOTER */
+
+.footer {
+  .logo {
+    height: $luxury;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: $luxury;
+    margin-right: $base;
+  }
+
+  ul li {
+    list-style: none;
+    margin-left: 0;
+  }
+}
+
+.legal-footer {
+  .container {
+    padding-bottom: $natural;
+    padding-top: $natural;
+
+    @include loose-spacing {
+      display: flex;
+      justify-content: space-between;
+
+      * {
+        margin-top: 0;
+      }
+    }
+  }
+}

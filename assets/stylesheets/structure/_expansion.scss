@@ -1,0 +1,236 @@
+/* LAYOUT EXPANSION */
+/* A crucial stylesheet. This Governs our increasing sizing and spacing for larger browser/device sizes. */
+
+/* NATURAL SPACING: Comes in regardless of any added classes */
+
+@include natural-spacing {
+  .container {
+    padding-left: $natural;
+    padding-right: $natural;
+  }
+
+  .block--card {
+    .container {
+      padding-bottom: $natural;
+      padding-top: $natural;
+    }
+  }
+}
+
+
+/* LOOSE SPACING: Comes in regardless of any added classes */
+
+@include loose-spacing {
+
+  .container {
+    padding-left: $loose;
+    padding-right: $loose;
+  }
+
+  .grid {
+    margin-left: -$loose;
+
+    > .grid__item {
+      padding-left: $loose;
+    }
+  }
+
+  .block {
+    .container {
+      padding-bottom: $loose;
+      padding-top: $loose;
+    }
+  }
+}
+
+
+/* LUXURY SPACING: Triggered by optional classes */
+
+@include luxury-spacing {
+
+  .section {
+    > .container {
+      padding-left: $luxury;
+      padding-right: $luxury;
+    }
+  }
+
+  .grid {
+    &--luxury-spacing, &--oversized-spacing, &--supersized-spacing {
+      margin-left: -$luxury;
+      margin-top: -$luxury;
+
+      & + * {
+        margin-top: $luxury;
+      }
+
+      > .grid__item {
+        margin-top: $luxury;
+        padding-left: $luxury;
+      }
+    }
+  }
+
+  * + .grid {
+    margin-top: 0;
+  }
+
+  .block {
+    &--luxury-spacing, &--oversized-spacing, &--supersized-spacing {
+      > .container {
+        padding: $luxury;
+      }
+    }
+  }
+}
+
+
+/* A MORE RELAXED BASE VERTICAL RHYTHM FOR LARGER SCREEN SIZES */
+
+@include breakpoint-16 {
+  * + * {
+    margin-top: $natural;
+  }
+
+  .grid__item {
+    fieldset & {
+      margin-top: $natural;
+    }
+  }
+}
+
+
+/* OVERSIZED SPACING: Triggered by optional classes */
+
+@include oversized-spacing {
+
+  .section {
+    > .container {
+      padding-left: $oversized;
+      padding-right: $oversized;
+    }
+
+    &--oversized-spacing, &--supersized-spacing {
+      > .container {
+        padding-bottom: $oversized;
+        padding-top: $oversized;
+
+        > .block {
+          * + & {
+            margin-top: $luxury;
+          }
+
+          & + * {
+            margin-top: $luxury;
+          }
+        }
+      }
+    }
+  }
+
+  .grid {
+    &--oversized-spacing, &--supersized-spacing {
+      margin-left: -$oversized;
+      margin-top: -$oversized;
+
+      & + * {
+        margin-top: $oversized;
+      }
+
+      > .grid__item {
+        margin-top: $oversized;
+        padding-left: $oversized;
+      }
+    }
+  }
+
+  * + .grid {
+    margin-top: 0;
+  }
+
+  .block {
+    &--oversized-spacing, &--supersized-spacing {
+      > .container {
+        padding: $oversized;
+
+        > .block {
+          * + & {
+            margin-top: $luxury;
+          }
+
+          & + * {
+            margin-top: $luxury;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* SUPERSIZED SCALING: Triggered by optional classes */
+
+@include supersized-spacing {
+
+  .section {
+    > .container {
+      padding-left: $supersized;
+      padding-right: $supersized;
+    }
+
+    &--supersized-spacing {
+      > .container {
+        padding-bottom: $supersized;
+        padding-top: $supersized;
+
+        > .block {
+          * + & {
+            margin-top: $oversized;
+          }
+
+          & + * {
+            margin-top: $oversized;
+          }
+        }
+      }
+    }
+  }
+
+  .grid {
+    &--supersized-spacing {
+      margin-left: -$supersized;
+      margin-top: -$supersized;
+
+      & + * {
+        margin-top: $supersized;
+      }
+
+      > .grid__item {
+        margin-top: $supersized;
+        padding-left: $supersized;
+      }
+    }
+  }
+
+  * + .grid {
+    margin-top: 0;
+  }
+
+  .block {
+    &--supersized-spacing {
+      > .container {
+        padding: $supersized;
+
+        > .block {
+          * + & {
+            margin-top: $oversized;
+          }
+
+          & + * {
+            margin-top: $oversized;
+          }
+        }
+      }
+    }
+  }
+}

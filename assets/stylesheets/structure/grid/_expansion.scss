@@ -1,0 +1,52 @@
+/* GRID EXPANSION */
+
+
+/* GRID VARIABLES: These define the available widths for our gride items */
+
+$one-sixth: 16.6666%;
+$one-fifth: 20%;
+$one-quarter: 25%;
+$one-third: 33.3333%;
+$two-fifths: 40%;
+$half: 50%;
+$two-thirds: 66.6666%;
+$three-quarters: 75%;
+$full: 100%;
+
+.grid {
+  @include natural-spacing {
+    margin-left: -$natural; /* This negative margin compensates for the left margins, necessary for "rows" of content which come at later breakpoints */
+  }
+
+  @include loose-spacing {
+    margin-left: -$loose; /* This negative margin compensates for the left margins, necessary for "rows" of content which come at later breakpoints */
+  }
+}
+
+.grid__item {
+  /*
+  DEFINED WIDTHS:
+  After certain breakpoints we start to have room for horizontal "rows" of content, so can define the widths of each grid item.
+  This is only a very general evolution of the grid, as it scales. Layout spacing and grid distribution spacing will affect the appearance of each gride item.
+  */
+
+  @include natural-spacing {
+    padding-left: $natural;
+  }
+
+  @include breakpoint-9 {
+    width: $half;
+  }
+
+  @include loose-spacing {
+    padding-left: $loose;
+  }
+
+  @include luxury-spacing {
+    width: $one-third;
+  }
+
+  @include supersized-spacing {
+    width: $one-quarter;
+  }
+}

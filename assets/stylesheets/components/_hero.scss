@@ -1,0 +1,81 @@
+/* HERO */
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  width: $full;
+
+  > .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
+}
+
+/* DOUBLE HERO */
+
+.hero--double {
+  height: auto;
+  position: relative;
+
+  @include luxury-spacing {
+    display: flex;
+  }
+
+  .hero__sub-section {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    @include luxury-spacing {
+      height: 50vw;
+      width: 50vw;
+    }
+
+    > .container {
+      align-items: center;
+      display: flex;
+      height: 100%;
+    }
+  }
+}
+
+
+/* CONTENT CARDS */
+
+.hero__content--card {
+  background: $base-background-color;
+}
+
+
+/* TEXT BACKGROUND BLOCKS */
+
+.hero__text-blocks {
+  .hero__title, .hero__excerpt, .hero__meta {
+    background: $base-background-color;
+    display: inline-block;
+    padding: $base;
+  }
+}
+
+
+/* DULL BACKGROUND */
+
+.hero--dull-background {
+  &::before {
+    content: "";
+    background: rgba($base-text-color, 0.75);
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .hero__content, .hero__title, .hero__excerpt, .hero__link {
+    color: $base-background-color;
+    z-index: 20;
+  }
+}

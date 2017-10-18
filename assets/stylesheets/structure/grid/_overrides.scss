@@ -1,0 +1,188 @@
+/* GRID OVERRIDES */
+
+
+@mixin grid-widths {
+  &-one-sixth {
+    width: $one-sixth;
+  }
+
+  &-one-fifth {
+    width: $one-fifth;
+  }
+
+  &-one-quarter {
+    width: $one-quarter;
+  }
+
+  &-one-third {
+    width: $one-third;
+  }
+
+  &-two-fifths {
+    width: $two-fifths;
+  }
+
+  &-half {
+    width: $half;
+  }
+
+  &-two-thirds {
+    width: $two-thirds;
+  }
+
+  &-three-quarters {
+    width: $three-quarters;
+  }
+
+  &-full {
+    width: $full;
+  }
+}
+
+.grid__item {
+  &.breakpoint {
+    @include breakpoint-0 {
+      &-0 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-1 {
+      &-1 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-2 {
+      &-2 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-3 {
+      &-3 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-4 {
+      &-4 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-5 {
+      &-5 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-6 {
+      &-6 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-7 {
+      &-7 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-8 {
+      &-8 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-9 {
+      &-9 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-10 {
+      &-10 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-11 {
+      &-11 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-12 {
+      &-12 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-13 {
+      &-13 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-14 {
+      &-14 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-15 {
+      &-15 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-16 {
+      &-16 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-17 {
+      &-17 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-18 {
+      &-18 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-19 {
+      &-19 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-20 {
+      &-20 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-21 {
+      &-21 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-22 {
+      &-22 {
+        @include grid-widths;
+      }
+    }
+
+    @include breakpoint-23 {
+      &-23 {
+        @include grid-widths;
+      }
+    }
+  }
+}

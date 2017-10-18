@@ -1,0 +1,50 @@
+/* LAYOUT LIMITS */
+
+
+/* LIMITING SECTION SPACING */
+
+.section {
+  &--no-spacing {
+    > .container {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  &--tight-spacing {
+    > .container {
+      padding-bottom: $tight;
+      padding-top: $tight;
+    }
+  }
+
+  &--base-spacing {
+    > .container {
+      padding-bottom: $base;
+      padding-top: $base;
+    }
+  }
+}
+
+
+/* LIMITING BLOCK SPACING */
+
+.block {
+  &--no-spacing {
+    > .container {
+      padding: 0;
+    }
+  }
+
+  &--tight-spacing {
+    > .container {
+      padding: $tight;
+    }
+  }
+
+  &--base-spacing {
+    > .container {
+      padding: $base;
+    }
+  }
+}

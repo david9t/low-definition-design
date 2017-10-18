@@ -1,0 +1,86 @@
+/* TEXT LINKS */
+
+a {
+  color: $link-text-color;
+  font-weight: bold;
+
+  &:visited {
+    color: $link-visited-text-color;
+  }
+
+  &:hover {
+    color: $link-hover-text-color;
+  }
+
+  &:active {
+    color: $link-active-text-color;
+  }
+}
+
+
+/* BUTTONS */
+
+button {
+  background: none;
+  font-size: $standard;
+}
+
+.btn, button {
+  border: 0.2em solid;
+  border-radius: 0.5em;
+  color: $link-text-color;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: $small;
+  width: 100%;
+
+  &:visited {
+    color: $link-visited-text-color;
+  }
+
+  &:hover {
+    background: $link-hover-text-color;
+    border-color: $link-hover-text-color;
+    color: $base-background-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    background: $link-active-text-color;
+    border-color: $link-active-text-color;
+  }
+
+  &--secondary {
+    display: inline-block;
+    width: auto;
+  }
+
+  @include breakpoint-3 {
+    padding: $small $medium;
+  }
+
+  @include natural-spacing {
+    display: inline-block;
+    width: auto;
+  }
+
+  form & {
+    margin-top: $large;
+  }
+}
+
+
+/* SECONDARY BUTTONS */
+
+.btn {
+  &--secondary {
+    font-size: $small;
+
+    & + .btn--secondary {
+      margin-left: $small;
+    }
+  }
+}

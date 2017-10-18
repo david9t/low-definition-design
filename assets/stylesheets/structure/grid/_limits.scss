@@ -1,0 +1,69 @@
+/* GRID LIMITS */
+
+
+/* LIMITING GRID SPACING */
+
+.grid {
+  &.grid--no-spacing {
+    margin-left: 0;
+
+    > .grid__item {
+      padding-left: 0;
+    }
+  }
+
+  &.grid--tight-spacing {
+    margin-left: -$tight;
+
+    > .grid__item {
+      padding-left: $tight;
+    }
+  }
+
+  &.grid--base-spacing {
+    margin-left: -$base;
+
+    > .grid__item {
+      padding-left: $base;
+    }
+  }
+}
+
+
+/* LIMITING GRID WIDTHS */
+
+> .grid__item {
+  .grid--limit-1 & {
+      width: $full;
+  }
+
+  @include breakpoint-9 {
+    .grid--limit-3 & {
+      width: $one-third;
+    }
+  }
+
+  @include breakpoint-11 {
+    .grid--limit-2 & {
+      width: $half;
+    }
+
+    .grid--limit-4 & {
+      width: $half;
+    }
+
+    .grid--limit-6 & {
+      width: $one-third;
+    }
+  }
+
+  @include breakpoint-15 {
+    .grid--limit-2 & {
+      width: $half;
+    }
+
+    .grid--limit-4 & {
+      width: $one-quarter;
+    }
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lo-Def Design</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="section section--separated section--base-spacing header">
+        <div class="container">
+          <img src="assets/images/image.jpg" alt="" class="logo" />
+          <a href="#footer" class="btn header__menu-button">Menu</a>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="/documentation">Home</a></li>
+            <li class="header__menu-item"><a href="/documentation/typography">Typography</a></li>
+            <li class="header__menu-item"><a href="/documentation/structure">Structure</a></li>
+            <li class="header__menu-item"><a href="/documentation/grids">Grids</a></li>
+            <li class="header__menu-item"><a href="/documentation/components">Components</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <section class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1 class="x-large">Structure</h1>
+        <p class="standard">Different ways of generically dividing and gathering content.</p>
+        <p>Groups of content can later be styled in unique, or project-specific ways.</p>
+        <ul>
+          <li><a href="#1">Sections and blocks</a></li>
+          <li><a href="#2">Expansion of section and block spacing</a></li>
+          <li><a href="#3">Optional limits to section and block spacing</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="1" class="section section--separated section--supersized-spacing structure--highlight">
+      <div class="container">
+        <h1>Sections and blocks</h1>
+        <h2 class="text--highlight">This is a section</h2>
+        <p>It generally stretches the full width of the browser.</p>
+        <p>It has applied to it the "section--separated" class, which creates a dividing border, surrounding the section.</p>
+        <p>Background colours, patterns or images can be used to distinguish between sections with finished designs.</p>
+
+        <div class="block block--oversized-spacing structure--highlight">
+          <div class="container">
+            <h2 class="text--highlight">This is a block</h2>
+            <p>A block should generally be used for smaller gatherings of breakout content.</p>
+            <p>Multiple blocks can exist within a single section.</p>
+            <p>In a finished design, a block can use a border, shading or a unique background colour to allow it to stand out from the section it sits within.</p>
+            <p>Naturally blocks will stretch to the full width of the browser, like this one.</p>
+            <h3>Blocks within a grid</h3>
+            <ul class="grid grid--limit-2">
+              <li class="grid__item">
+                <div class="block structure--highlight">
+                  <div class="container">
+                    <h4 class="text--highlight">This is a nested block</h4>
+                    <p>But, within a grid, a block can be constrained to smaller widths, like this one.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="grid__item">
+                <div class="block structure--highlight">
+                  <div class="container">
+                    <h4 class="text--highlight">This is a nested block</h4>
+                    <p>And this one.</p>
+                    <p>Notice how these blocks are nested.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.section</code></li>
+              <li><code>.section--separated</code></li>
+              <li><code>.block</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="2" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Expansion of section and block spacing</h1>
+        <p class="standard">Going beyond the natural, minimal best practice spacing built into LO-DEF, we can choose to let our sections and blocks get larger when screen size allows it:</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Natural section spacing</h2>
+        <p class="standard">This section doesn't have an optional spacing class applied to it, so falls back to the minimal best practice spacing.</p>
+        <div class="block">
+          <div class="container">
+            <h3>Natural block spacing</h3>
+            <p>This block doesn't have an optional spacing class applied to it, so falls back to minimal best practice spacing.</p>
+          </div>
+        </div>
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h3>Luxury block spacing</h3>
+            <p>This block uses luxury spacing.</p>
+            <p>Starting mobile-first it won't have any affect, minimal best practice spacing will be used. As the browser gets wider and wider, the class kicks in and gives this block more padding.</p>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply this class to structural tags:</p>
+            <ul>
+              <li><code>.block--luxury-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--separated section--oversized-spacing">
+      <div class="container">
+        <h2>Oversized section spacing</h2>
+        <p class="standard">This section uses oversized spacing.</p>
+        <p>Starting mobile-first it won't have any affect, minimal best practice spacing will be used. As the browser gets wider and wider, this class kicks in and gives this section more padding.</p>
+        <p>Check these at different browser sizes to observe different behaviour.</p>
+        <div class="block block--oversized-spacing">
+          <div class="container">
+            <h3>Oversized block spacing</h3>
+            <p>This block uses oversized spacing.</p>
+            <p>Starting mobile-first it won't have any affect, minimal best practice spacing will be used. As the browser gets wider and wider, this class kicks in and gives this block more padding.</p>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.section--oversized-spacing</code></li>
+              <li><code>.block--oversized-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h2>Supersized section spacing</h2>
+        <p class="standard">This section uses supersized spacing.</p>
+        <p>Starting mobile-first it won't have any affect, minimal best practice spacing will be used. As the browser gets wider and wider, this class kicks in and gives this section more padding.</p>
+        <p>Check these at different browser sizes to observe different behaviour.</p>
+        <div class="block block--supersized-spacing">
+          <div class="container">
+            <h3>Supersized block spacing</h3>
+            <p>This block uses supersized spacing.</p>
+            <p>Starting mobile-first it won't have any affect. As the browser gets wider and wider, this class kicks in and gives this block more padding.</p>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.section--supersized-spacing</code></li>
+              <li><code>.block--supersized-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="3" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Optional limits to section and block spacing</h1>
+        <p class="standard">We can also choose to limit the spacing of our sections and blocks.</p>
+        <p>These limits will apply consistently, regardless of screen size.</p>
+      </div>
+    </section>
+    <section class="section section--base-spacing">
+      <div class="container">
+        <h2>Base section spacing</h2>
+        <p class="standard">This section is limited to base spacing.</p>
+        <p>Natural, global changes to section spacing won't take affect on this section.</p>
+        <div class="block block--base-spacing">
+          <div class="container">
+            <h3>Base block spacing</h3>
+            <p>This block is limited to base spacing.</p>
+            <p>Natural, global changes to block spacing won't take affect on this section.</p>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.section--base-spacing</code></li>
+              <li><code>.block--base-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--separated section--tight-spacing">
+      <div class="container">
+        <h2>Tight section spacing</h2>
+        <p class="standard">This section is limited to tight spacing.</p>
+        <p>Natural, global changes to section spacing won't take affect on this section.</p>
+        <div class="block block--tight-spacing">
+          <div class="container">
+            <h3>Tight block spacing</h3>
+            <p>This block is limited to tight spacing.</p>
+            <p>Natural, global changes to block spacing won't take affect on this section.</p>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.section--tight-spacing</code></li>
+              <li><code>.block--tight-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--separated section--no-spacing">
+      <div class="container">
+        <h2>No section spacing</h2>
+        <p class="standard">This section is limited to no spacing.</p>
+        <p>Natural, global changes to section spacing won't take affect on this section.</p>
+        <div class="block block--no-spacing">
+          <div class="container">
+            <h3>No block spacing</h3>
+            <p>This block is limited to no spacing.</p>
+            <p>Natural, global changes to block spacing won't take affect on this section.</p>
+          </div>
+        </div>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.section--no-spacing</code></li>
+              <li><code>.block--no-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>

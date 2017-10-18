@@ -1,0 +1,39 @@
+////////
+////////////THE RATIO
+//////////////////This all-important number sets your base line-height.
+//////////////////But it also sets the multiplication factor for modular scale typography, layout sizing increments and pretty much everything else...
+////////Try and derive the number from the ideal line-height for your base paragraph text.
+//////////////////Generally you'll want to chose a number between 1.4 and 1.6. Have a go with 1.618 if you really want to show off to your design friends.
+//////////////////Have a play, but anything lower than ~1.3 you'll start to lose distinction between your different heading levels. Anything higher than ~1.7 and your layout will scale too much.
+///////////////////////////
+
+$ratio: 1.5;
+
+
+/* LAYOUT SIZING */
+/* Root spacing - only affected by html font size */
+
+$base: 1rem;
+
+$natural: $ratio * $base;
+$loose: $ratio * $natural;
+$luxury: $ratio * $loose;
+$oversized: $ratio * $luxury;
+$supersized: $ratio * $oversized;
+$ultrasized: $ratio * $supersized;
+
+$tight: $base / $ratio;
+
+
+/* TYPOGRAPHY SIZING */
+/* Relative spacing - can inherit local parent or element font size */
+
+$standard: 1em;
+
+$medium: $ratio * $standard;
+$large: $ratio * $medium;
+$x-large: $ratio * $large;
+$xx-large: $ratio * $x-large;
+$xxx-large: $ratio * $xx-large;
+
+$small: $standard / $ratio;

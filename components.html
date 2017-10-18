@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lo-Def Design</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+
+    <!-- SITE WRAPPER, to help us deal with margins compensating for fixed headers -->
+
+    <div class="site-wrapper">
+
+
+      <!-- UTILITY MENU -->
+
+      <header class="section section--tight-spacing utility">
+        <div class="container">
+          <ul class="utility__menu">
+            <li class="utility__menu-item"><a href="#">[Link]</a></li>
+            <li class="utility__menu-item"><a href="#">[Link]</a></li>
+            <li class="utility__menu-item"><a href="#">[Link]</a></li>
+          </ul>
+          <ul class="utility__menu">
+            <li class="utility__menu-item"><a href="#">[Link]</a></li>
+          </ul>
+        </div>
+      </header>
+
+
+      <!-- MAIN HEADER -->
+
+      <header class="section section--separated section--base-spacing header">
+          <div class="container">
+            <img src="assets/images/image.jpg" alt="" class="logo" />
+            <a href="#footer" class="btn header__menu-button">Menu</a>
+            <ul class="header__menu">
+              <li class="header__menu-item"><a href="/documentation">Home</a></li>
+              <li class="header__menu-item"><a href="/documentation/typography">Typography</a></li>
+              <li class="header__menu-item"><a href="/documentation/structure">Structure</a></li>
+              <li class="header__menu-item"><a href="/documentation/grids">Grids</a></li>
+              <li class="header__menu-item"><a href="/documentation/components">Components</a></li>
+            </ul>
+          </div>
+      </header>
+
+
+      <!-- BREADCRUMBS -->
+
+      <section class="section section--separated section--base-spacing breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a href="#" class="breadcrumbs__link">Home</a>
+              <span class="breadcrumbs__forward-arrow">&raquo;</span>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a href="#" class="breadcrumbs__link">[Parent]</a>
+              <span class="breadcrumbs__forward-arrow">&raquo;</span>
+            </li>
+            <li class="breadcrumbs__list-item breadcrumbs__direct-parent">
+              <span class="breadcrumbs__back-arrow">&laquo;</span>
+              <a href="#" class="breadcrumbs__link">[Parent]</a>
+              <span class="breadcrumbs__forward-arrow">&raquo;</span>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <p>[This page]</p>
+            </li>
+        </div>
+      </section>
+
+
+      <!-- INTRODUCTION -->
+
+      <section class="section section--separated introduction-panel">
+        <div class="container">
+          <h1>[Introduction panel]</h1>
+          <p class="standard">Introduction or explanation sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+
+
+      <!-- HERO, full width, full height, with content card -->
+
+      <section class="section section--separated hero" style="background-image: url('assets/images/image.jpg');">
+        <div class="container">
+          <div class="block hero__content hero__content--card">
+            <div class="container">
+              <p class="hero__meta">[Meta information]</p>
+              <h1 class="hero__title">[Hero]</h1>
+              <p class="standard hero__excerpt">Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <a class="btn hero__link">Button</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- HERO, full width, full height, with text background blocks - within section padding -->
+
+      <section class="section section--separated hero">
+        <div class="container">
+
+          <section class="section hero" style="background-image: url('assets/images/image.jpg');">
+            <div class="container">
+              <div class="hero__content hero__text-blocks">
+                <h1 class="hero__title">[Hero]</h1><br>
+                <p class="standard hero__excerpt">Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p><br>
+                <p class="hero__meta">[Meta information]</p><br>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+
+      <!-- HERO, full width, full height - with dull background overlay -->
+
+      <section class="section section--separated hero hero--dull-background" style="background-image: url('assets/images/image.jpg');">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">[Hero]</h1>
+            <p class="standard hero__excerpt">Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <a class="btn hero__link">Button</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- HERO, full width, full height - with dull background overlay - within section padding -->
+
+      <section class="section section--separated hero">
+        <div class="container">
+          <section class="section hero hero--dull-background" style="background-image: url('assets/images/image.jpg');">
+            <div class="container">
+              <div class="hero__content">
+                <h1 class="hero__title">[Hero]</h1>
+                <h2 class="hero__title">[Sub-heading]</h2>
+                <p class="standard hero__excerpt">Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+
+      <!-- DOUBLE HERO -->
+
+      <section class="section section--separated hero hero--double">
+        <section class="section section--separated hero__sub-section">
+          <div class="container">
+            <div class="hero__content">
+              <h2>[Sub-heading]</h2>
+              <p>Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a class="btn">Button</a>
+            </div>
+          </div>
+        </section>
+        <section class="section section--separated hero__sub-section" style="background-image: url('assets/images/image.jpg');">
+          <div class="container">
+            <div class="block hero__content hero__content--card">
+              <div class="container">
+                <h1 class="hero__title">[Hero]</h1>
+                <p class="standard hero__excerpt">Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <a class="btn hero__link">Button</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+
+      <!-- DOUBLE HERO -->
+
+      <section class="section section--separated hero hero--double">
+        <section class="section section--separated hero__sub-section hero--dull-background" style="background-image: url('assets/images/image.jpg');">
+          <div class="container">
+            <div class="hero__content">
+              <h1 class="hero__title">[Hero]</h1>
+              <p class="standard hero__excerpt">Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <a class="btn hero__link">Button</a>
+            </div>
+          </div>
+        </section>
+        <section class="section section--separated hero__sub-section">
+          <div class="container">
+            <div class="hero__content">
+              <h2>[Sub-heading]</h2>
+              <p>Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a class="btn">Button</a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+
+      <!-- CONTENT PAGE LAYOUT -->
+
+      <section class="section section--separated">
+        <div class="container">
+          <div class="grid grid--limit-2 grid--oversized-spacing">
+
+
+            <!-- MAIN SECTION -->
+
+            <div class="grid__item main-and-sidebar__main">
+
+
+              <!-- BODY TEXT -->
+
+              <div class="block text--long-form body-text">
+                <div class="container">
+                  <h2>[Sub-heading]</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h3>[Sub-heading]</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem:
+                  <ul>
+                    <li>Ut enim ad minima veniam</li>
+                    <li>Quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                    <li>Nisi ut aliquid ex ea commodi consequatur?</li>
+                  </ul>
+                  <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <a href="#">cupidatat non proident</a>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+
+
+              <!-- IMAGE -->
+
+              <img src="assets/images/image.jpg" alt="" />
+
+
+              <!-- BODY TEXT -->
+
+              <div class="block text--long-form body-text">
+                <div class="container">
+                  <h2>[Sub-heading]</h2>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+              </div>
+
+
+              <!-- IMAGE, with caption -->
+
+              <figure>
+                <img src="assets/images/image.jpg" alt="" />
+                <figcaption>Rure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
+              </figure>
+
+
+              <!-- QUOTE -->
+
+              <div class="block text--lockup quote">
+                <div class="container">
+
+                  <p class="quote__text">&ldquo;Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur.&rdquo;</p>
+
+                  <footer class="quote__footer">
+                    <div class="quote__author">
+                      <cite class="quote__author-name">[Author]</cite>
+                      <p class="quote__author-description small">[Description quis nostrum exercitationem ullam corporis]</p>
+                    </div>
+                    <img src="assets/images/image.jpg" class="quote__image" alt="" />
+                  </footer>
+
+                </div>
+              </div>
+
+
+              <!-- BODY TEXT -->
+
+              <div class="block text--long-form body-text">
+                <div class="container">
+                  <h2>[Sub-heading]</h2>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+              </div>
+
+
+              <!-- CALL-TO-ACTION -->
+
+              <div class="block teaser teaser--call-to-action">
+                  <div class="grid grid--limit-2">
+                    <div class="grid__item teaser__content">
+                      <div class="container">
+                        <h2 class="teaser__title">[Full call-to-action]</h2>
+                        <p class="teaser__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        <a href="#" class="btn teaser__link">Act now</a>
+                      </div>
+                    </div>
+                    <div class="grid__item teaser__image-surround">
+                      <div class="teaser__image" style="background-image: url('assets/images/image.jpg');">
+                        &nbsp;
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+              <!-- CASE STUDY -->
+
+              <div class="block case-study">
+                  <div class="container">
+                    <div class="grid grid--limit-2">
+                      <div class="grid__item">
+                        <img src="assets/images/image.jpg" alt="" />
+                      </div>
+                      <div class="grid__item">
+                        <h2>[Case study]</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        <a href="#" class="btn">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+
+              <!-- LOGIN -->
+
+              <div class="block">
+                <div class="container">
+                  <h2>[Login]</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="btn">Login</a>
+                </div>
+              </div>
+
+
+              <!-- DOWNLOAD -->
+
+              <div class="block download">
+                <div class="container">
+                  <h2>[Download]</h2>
+                  <img src="assets/images/icon.png" class="download__icon" alt="" />
+                  <p class="standard download__file">[File name]</p>
+                  <p class="download__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+
+            <div class="grid__item main-and-sidebar__sidebar">
+
+
+              <!-- SUB-NAV -->
+
+              <ul class="sub-nav">
+                <li class="sub-nav__item sub-nav__parent">
+                  <a href="#" class="sub-nav__link">[Parent page]</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="#" class="sub-nav__link">[Sibling page]</a>
+                </li>
+                <li class="sub-nav__item sub-nav__current">
+                  <a href="#" class="sub-nav__link">[Current page]<img src="assets/images/up-arrow.png" class="sub-nav__parent-icon" alt="" /></a>
+                  <ul class="sub-nav__child-list">
+                    <li class="sub-nav__item sub-nav__child">
+                      <a href="#" class="sub-nav__link">[Child page]</a>
+                    </li>
+                    <li class="sub-nav__item sub-nav__child">
+                      <a href="#" class="sub-nav__link">[Child page]</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="#" class="sub-nav__link">[Sibling page]<img src="assets/images/down-arrow.png" class="sub-nav__parent-icon" alt="" /></a>
+                </li>
+                <li class="sub-nav__item">
+                  <a href="#" class="sub-nav__link">[Sibling page]</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section">
+        <div class="container">
+
+
+          <!-- SOCIAL SHARING -->
+
+          <div class="block social-sharing">
+            <div class="container">
+              <h2>[Social sharing]</h2>
+              <p>Compelling reasons to share lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:</p>
+              <a href="#" class="btn"><img src="assets/images/icon.png" class="social-sharing__icon" alt="" /> Share</a>
+              <a href="#" class="btn"><img src="assets/images/icon.png" class="social-sharing__icon" alt="" /> Tweet</a>
+              <a href="#" class="btn"><img src="assets/images/icon.png" class="social-sharing__icon" alt="" /> Share</a>
+              <a href="#" class="btn"><img src="assets/images/icon.png" class="social-sharing__icon" alt="" /> Email</a>
+            </div>
+          </div>
+
+
+          <!-- ARTICLE TEASER -->
+
+          <div class="block teaser">
+              <div class="grid grid--limit-2">
+                <div class="grid__item teaser__content">
+                  <div class="container">
+                    <p>[01/01/2018] &#xb7; [Category]</p>
+                    <h2 class="teaser__title">[Content title]</h2>
+                    <p class="teaser__excerpt">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <p class="teaser__link"><strong>More &rarr;</strong></p>
+                  </div>
+                </div>
+                <div class="grid__item teaser__image-surround">
+                  <div class="teaser__image" style="background-image: url('assets/images/image.jpg');">
+                    &nbsp;
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section section--separated">
+        <div class="container">
+
+
+          <!-- FORM -->
+
+          <div class="block body-text">
+            <div class="container">
+              <h2>[Forms]</h2>
+              <form>
+
+                <fieldset class="grid grid--limit-2">
+                  <div class="grid__item">
+                    <label>[label]</label>
+                    <input type="text">
+                    <p class="small">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                  </div>
+                  <div class="grid__item">
+                    <label>[label]</label>
+                    <input type="text">
+                    <p class="small">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                  </div>
+                </fieldset>
+
+                <label>[label]</label>
+                <input type="number">
+
+                <label>[label]</label>
+                <p class="small">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                <textarea rows="8"></textarea>
+
+                <label>[label]</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+
+                <h3>[sub-heading]</h3>
+                <input type="radio">
+                <label>[label]</label>
+                <br>
+
+                <input type="radio">
+                <label>[label]</label>
+
+                <h3>[sub-heading]</h3>
+                <input type="checkbox">
+                <label>[label]</label>
+                <br>
+
+                <input type="checkbox">
+                <label>[label]</label>
+                <br>
+
+                <button>Submit</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- RELATED CONTENT TEASERS -->
+
+      <section class="section section--separated">
+        <div class="container">
+          <h2>[Related content]</h2>
+          <p>Here we're introducing teaser links to key site sections or sub-pages:</p>
+          <ul class="grid grid--limit-3">
+            <li class="grid__item">
+              <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+              <h3><a href="#">[Content title]</a></h3>
+              <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+              <a href="#" class="btn">More</a>
+            </li>
+            <li class="grid__item">
+              <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+              <h3><a href="#">[Content title]</a></h3>
+              <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+              <a href="#" class="btn">More</a>
+            </li>
+            <li class="grid__item">
+              <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+              <h3><a href="#">[Content title]</a></h3>
+              <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+              <a href="#" class="btn">More</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- RELATED CONTENT TEASERS - card blocks -->
+
+      <section class="section section--separated">
+        <div class="container">
+          <h2>[Related content]</h2>
+          <p>Here we're introducing teaser links to key site sections or sub-pages:</p>
+          <ul class="grid grid--limit-2">
+            <li class="grid__item">
+              <a href="#" class="block block--card">
+                <img src="assets/images/image.jpg" alt="" />
+                <div class="container">
+                  <h3 class="block__title">[Content title]</h3>
+                  <p class="block__excerpt">Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+                  <p class="block__cta"><strong>More &rarr;</strong></p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__item">
+              <a href="#" class="block block--card">
+                <img src="assets/images/image.jpg" alt="" />
+                <div class="container">
+                  <h3 class="block__title">[Content title]</h3>
+                  <p class="block__excerpt">Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+                  <p class="block__cta"><strong>More &rarr;</strong></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+
+      <footer class="section section--separated footer">
+        <div class="container">
+          <ul class="grid">
+            <li class="grid__item">
+              <img src="assets/images/image.jpg" alt="" class="logo" />
+            </li>
+            <li class="grid__item">
+              <h2>[Sub-heading]</h2>
+              <ul>
+                <li><a href="#">[Link]</a></li>
+                <li><a href="#">[Link]</a></li>
+                <li><a href="#">[Link]</a></li>
+                <li><a href="#">[Link]</a></li>
+                <li><a href="#">[Link]</a></li>
+              </ul>
+            </li>
+            <li class="grid__item">
+              <h2>[Social media]</h2>
+              <img src="assets/images/icon.png" alt="" class="footer__icon" />
+              <img src="assets/images/icon.png" alt="" class="footer__icon" />
+              <img src="assets/images/icon.png" alt="" class="footer__icon" />
+            </li>
+            <li class="grid__item">
+              <h2>[Sub-heading]</h2>
+              <ul class="small">
+                <li><a href="#">[Link]</a></li>
+                <li><a href="#">[Link]</a></li>
+                <li><a href="#">[Link]</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+
+      <!-- LEGAL FOOTER -->
+
+      <footer class="section section--separated section--base-spacing legal-footer">
+        <div class="container">
+          <p class="small">Ut enim ad minim veniam, 2017.</p>
+          <p class="small">Website by <a href="#">Reason Digital</a>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

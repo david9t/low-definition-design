@@ -1,0 +1,66 @@
+/* LAYOUT BASICS */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+
+/* CONTAINER */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: $ratio * 80em;
+  padding: $luxury $base;
+  position: relative;
+}
+
+.section:not(.section--separated) + .section:not(.section--separated) {
+  > .container {
+    padding-top: 0;
+  }
+}
+
+
+/* SECTIONS */
+
+.section {
+  margin-top: 0;
+}
+
+
+/* BLOCKS */
+
+.block {
+  display: block;
+  text-decoration: none;
+
+  p {
+    font-weight: normal;
+  }
+
+  * + & {
+    margin-top: $loose;
+  }
+
+  & + * {
+    margin-top: $loose;
+  }
+
+  .container {
+    padding-bottom: $loose;
+    padding-top: $loose;
+  }
+
+  &--card {
+    .container {
+      padding-bottom: $base;
+      padding-top: $base;
+    }
+  }
+}

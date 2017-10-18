@@ -1,0 +1,31 @@
+/* GRID BASICS*/
+
+
+/* BASIC GRID SETUP: This is mobile-first, so will initially only involve single columns. This means we only need to define the vertical spacing */
+
+.grid {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -$loose;
+
+  * + & {
+    margin-top: 0;
+  }
+
+  & + * {
+    margin-top: $loose;
+  }
+}
+
+.grid__item {
+  list-style: none;
+  margin-left: 0;
+  margin-top: $loose;
+  padding-left: 0;
+  width: 100%;
+
+  fieldset & {
+    margin-top: $base;
+  }
+}

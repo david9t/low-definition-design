@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lo-Def Design</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="section section--separated section--base-spacing header">
+        <div class="container">
+          <img src="assets/images/image.jpg" alt="" class="logo" />
+          <a href="#footer" class="btn header__menu-button">Menu</a>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="/documentation">Home</a></li>
+            <li class="header__menu-item"><a href="/documentation/typography">Typography</a></li>
+            <li class="header__menu-item"><a href="/documentation/structure">Structure</a></li>
+            <li class="header__menu-item"><a href="/documentation/grids">Grids</a></li>
+            <li class="header__menu-item"><a href="/documentation/components">Components</a></li>
+          </ul>
+        </div>
+    </header>
+
+    <section class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1 class="x-large">Grids</h1>
+        <p class="standard">Sophisticated layouts and alignment.</p>
+        <p>We can let LO-DEF automate the widths of grid items, at different browser sizes. Or we can exercise more control, adding in more and more specificity as we need it.</p>
+        <ul>
+          <li><a href="#1">Natural alignment and spacing</a></li>
+          <li><a href="#2">Expansion to grid spacing</a></li>
+          <li><a href="#3">Optional limits to alignment and spacing</a></li>
+          <li><a href="#4">Automatic limits to row lengths</a></li>
+          <li><a href="#5">Manual overrides for specific row control</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="1" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Natural alignment and spacing</h1>
+        <p class="standard">How grids adapt if we leave them to it:</p>
+        <ul class="grid">
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply these classes to structural tags:</p>
+            <ul>
+              <li><code>.grid</code></li>
+              <li><code>.grid__item</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="2" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Expansion to grid spacing</h1>
+        <p class="standard">Extra spacing we can provide between grid items, when there's enough screen space.</p>
+        <p>Much like section and block spacing, starting mobile-first these classes won't have any affect, minimal best practice spacing will be used. But as the browser gets wider and wider, these classes kick-in and give us more padding between grid items.</p>
+        <ul class="grid grid--supersized-spacing">
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply theses classes to structural tags:</p>
+            <ul>
+              <li><code>.grid--luxury-spacing</code></li>
+              <li><code>.grid--oversized-spacing</code></li>
+              <li><code>.grid--supersized-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="3" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Optional limits to alignment and spacing</h1>
+        <p class="standard">If we like we can choose smaller, or even non-existent spacing between grid items.</p>
+        <p>Like section and block spacing limits, these limits will apply consistently, regardless of screen size:</p>
+        <ul class="grid grid--no-spacing">
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply theses classes to structural tags:</p>
+            <ul>
+              <li><code>.grid--base-spacing</code></li>
+              <li><code>.grid--tight-spacing</code></li>
+              <li><code>.grid--no-spacing</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="4" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Automatic limits to row lengths</h1>
+        <p class="standard">If we know how many grid items we're expecting, we can tell our grid. It'll adapt accordingly.</p>
+
+        <h2>Two</h2>
+        <p>This grid has a row limit of two grid items. Whenever there's enough screen space for more than one grid item per row, two will show. But two is the maximum here:</p>
+        <ul class="grid grid--limit-2">
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 4</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <h2>Three</h2>
+        <p>This grid has a row limit of three grid items. Whenever there's enough screen space for more than one grid item per row, three will show. But two is the maximum here.</p>
+        <p>To avoid orphan grid items, the row will always use either one or three grid items - not two.</p>
+        <ul class="grid grid--limit-3">
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <h2>Four</h2>
+        <p>This grid has a row limit of four grid items. Whenever there's enough screen space for more than one grid item per row, two will show - as this won't lead to any orphan grid items.</p>
+        <p>Whenever there's enough screen space for more than two, four will show:</p>
+        <ul class="grid grid--limit-4">
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 4</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply classes like this to a <code>.grid</code> element:</p>
+            <ul>
+              <li><code>.grid--limit-1</code></li>
+              <li><code>.grid--limit-2</code></li>
+              <li><code>.grid--limit-3</code></li>
+              <li><code>.grid--limit-4</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="5" class="section section--separated section--supersized-spacing">
+      <div class="container">
+        <h1>Manual overrides for specific row control</h1>
+        <p class="standard">For ultimate control we can tell each grid item how wide to be, and when:</p>
+        <ul class="grid">
+          <li class="grid__item breakpoint-0-full">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 1</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item breakpoint-0-full breakpoint-10-two-thirds">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 2</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+          <li class="grid__item breakpoint-0-full breakpoint-10-one-third">
+            <a href="#"><img src="assets/images/image.jpg" alt="" /></a>
+            <h2><a href="#">Grid item 3</a></h2>
+            <p>Excerpt or introduction excepteur sint occaecat cupidatat non proident</p>
+          </li>
+        </ul>
+
+        <div class="block block--luxury-spacing">
+          <div class="container">
+            <h2>Useful classes</h2>
+            <p>Apply classes like this to a <code>.grid__item</code> element:</p>
+            <ul>
+              <li><code>.breakpoint-0-full</code></li>
+              <li><code>.breakpoint-4-three-quarters</code></li>
+              <li><code>.breakpoint-12-two-thirds</code></li>
+              <li><code>.breakpoint-6-half</code></li>
+              <li><code>.breakpoint-8-two-fifths</code></li>
+              <li><code>.breakpoint-7-one-third</code></li>
+              <li><code>.breakpoint-19-one-quarter</code></li>
+              <li><code>.breakpoint-15-one-fifth</code></li>
+              <li><code>.breakpoint-5-one-sixth</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>

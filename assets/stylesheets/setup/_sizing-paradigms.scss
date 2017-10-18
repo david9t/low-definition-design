@@ -1,0 +1,31 @@
+/* SIZING PARADIGMS: Our core incremental shifts in sizing and spacing. */
+
+@mixin natural-spacing {
+  @include breakpoint-5 {
+    @content;
+  }
+}
+
+@mixin loose-spacing {
+  @include breakpoint-9 {
+    @content;
+  }
+}
+
+@mixin luxury-spacing {
+  @include breakpoint-15 {
+    @content;
+  }
+}
+
+@mixin oversized-spacing {
+  @include breakpoint-17 {
+    @content;
+  }
+}
+
+@mixin supersized-spacing {
+  @include breakpoint-21 {
+    @content;
+  }
+}
