@@ -1,0 +1,9 @@
+/* SHADING */
+@mixin standard-shadow {
+	box-shadow: 0 0 $small rgba($base-text-color,0.1);
+}
+
+/* BORDER STYLE */
+@mixin standard-border {
+	border: 1px dashed #aaa;
+}
