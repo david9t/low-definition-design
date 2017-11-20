@@ -1,0 +1,29 @@
+{
+  "name": "low-definition-design",
+  "version": "1.0.0",
+  "description": "A design philosophy and development boilerplate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reasonjon/low-definition-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reasonjon/low-definition-design/issues"
+  },
+  "homepage": "https://github.com/reasonjon/low-definition-design#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}
