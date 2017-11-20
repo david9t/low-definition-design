@@ -9,7 +9,6 @@ gulp.task('css', function() {
 		.pipe(sass({outputStyle: 'compressed'})
 			.on('error', sass.logError))
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
 			cascade: false
 		}))
 		.pipe(sourcemaps.write('.'))
@@ -17,6 +16,6 @@ gulp.task('css', function() {
 });
 
 //Watch task
-gulp.task('default', function() {
+gulp.task('default', ['css'], function() {
 	gulp.watch('src/scss/**/*.scss', ['css']);
 });
