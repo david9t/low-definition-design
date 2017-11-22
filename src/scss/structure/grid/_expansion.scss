@@ -15,11 +15,11 @@ $full: 100%;
 
 .grid {
   @include natural-spacing {
-    margin-left: -$natural; /* This negative margin compensates for the left margins, necessary for "rows" of content which come at later breakpoints */
+    margin-left: -$layout-medium; /* This negative margin compensates for the left margins, necessary for "rows" of content which come at later breakpoints */
   }
 
   @include loose-spacing {
-    margin-left: -$loose; /* This negative margin compensates for the left margins, necessary for "rows" of content which come at later breakpoints */
+    margin-left: -$layout-large; /* This negative margin compensates for the left margins, necessary for "rows" of content which come at later breakpoints */
   }
 }
 
@@ -31,7 +31,7 @@ $full: 100%;
   */
 
   @include natural-spacing {
-    padding-left: $natural;
+    padding-left: $layout-medium;
   }
 
   @include breakpoint-9 {
@@ -39,7 +39,7 @@ $full: 100%;
   }
 
   @include loose-spacing {
-    padding-left: $loose;
+    padding-left: $layout-large;
   }
 
   @include luxury-spacing {

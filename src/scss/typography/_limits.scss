@@ -9,11 +9,11 @@
   }
 
   .text--tight-spacing & {
-    margin-top: $tight;
+    margin-top: $layout-tight;
   }
 
   .text--base-spacing & {
-    margin-top: $base;
+    margin-top: $layout-base;
   }
 }
 
@@ -23,10 +23,10 @@
   }
 
   .text--tight-spacing & {
-    margin-top: $tight;
+    margin-top: $layout-tight;
   }
 
   .text--base-spacing & {
-    margin-top: $base;
+    margin-top: $layout-base;
   }
 }

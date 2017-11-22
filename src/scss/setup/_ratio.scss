@@ -13,27 +13,26 @@ $ratio: 1.5;
 /* LAYOUT SIZING */
 /* Root spacing - only affected by html font size */
 
-$base: 1rem;
+$layout-base: 1rem;
 
-$natural: $ratio * $base;
-$loose: $ratio * $natural;
-$luxury: $ratio * $loose;
-$oversized: $ratio * $luxury;
-$supersized: $ratio * $oversized;
-$ultrasized: $ratio * $supersized;
+$layout-medium: $ratio * $layout-base;
+$layout-large: $ratio * $layout-medium;
+$layout-x-large: $ratio * $layout-large;
+$layout-xx-large: $ratio * $layout-x-large;
+$layout-xxx-large: $ratio * $layout-xx-large;
 
-$tight: $base / $ratio;
+$layout-tight: $layout-base / $ratio;
 
 
 /* TYPOGRAPHY SIZING */
 /* Relative spacing - can inherit local parent or element font size */
 
-$standard: 1em;
+$type-standard: 1em;
 
-$medium: $ratio * $standard;
-$large: $ratio * $medium;
-$x-large: $ratio * $large;
-$xx-large: $ratio * $x-large;
-$xxx-large: $ratio * $xx-large;
+$type-medium: $ratio * $type-standard;
+$type-large: $ratio * $type-medium;
+$type-x-large: $ratio * $type-large;
+$type-xx-large: $ratio * $type-x-large;
+$type-xxx-large: $ratio * $type-xx-large;
 
-$small: $standard / $ratio;
+$type-small: $type-standard / $ratio;

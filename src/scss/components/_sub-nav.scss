@@ -20,14 +20,14 @@
     justify-content: space-between;
 
     @include standard-border;
-    padding: $standard;
+    padding: $type-standard;
 
     @include natural-spacing {
-      padding: $standard $medium;
+      padding: $type-standard $type-medium;
     }
 
     @include loose-spacing {
-      padding: $medium $large;
+      padding: $type-medium $type-large;
     }
   }
 
@@ -41,25 +41,25 @@
     a {
       @include standard-border;
       font-weight: bold;
-      font-size: $medium;
-      padding: $small;
+      font-size: $type-medium;
+      padding: $type-small;
 
       @include natural-spacing {
-        padding: $standard;
+        padding: $type-standard;
       }
 
       @include loose-spacing {
-        padding: $standard $medium;
+        padding: $type-standard $type-medium;
       }
 
       @include supersized-spacing {
-        padding: $medium;
+        padding: $type-medium;
       }
     }
   }
 
   &__parent-icon {
-    height: $small;
+    height: $type-small;
   }
 
   &__child-list {
@@ -68,14 +68,14 @@
 
   &__child {
     a {
-      padding-left: $large;
+      padding-left: $type-large;
 
       @include natural-spacing {
-        padding-left: $medium+$medium;
+        padding-left: $type-medium+$type-medium;
       }
 
       @include loose-spacing {
-        padding-left: $large+$large;
+        padding-left: $type-large+$type-large;
       }
     }
   }

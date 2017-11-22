@@ -13,15 +13,15 @@
 
   &--tight-spacing {
     > .container {
-      padding-bottom: $tight;
-      padding-top: $tight;
+      padding-bottom: $layout-tight;
+      padding-top: $layout-tight;
     }
   }
 
   &--base-spacing {
     > .container {
-      padding-bottom: $base;
-      padding-top: $base;
+      padding-bottom: $layout-base;
+      padding-top: $layout-base;
     }
   }
 }
@@ -38,13 +38,13 @@
 
   &--tight-spacing {
     > .container {
-      padding: $tight;
+      padding: $layout-tight;
     }
   }
 
   &--base-spacing {
     > .container {
-      padding: $base;
+      padding: $layout-base;
     }
   }
 }

@@ -1,6 +1,6 @@
 /* SHADING */
 @mixin standard-shadow {
-	box-shadow: 0 0 $small rgba($base-text-color,0.1);
+	box-shadow: 0 0 $type-small rgba($base-text-color,0.1);
 }
 
 /* BORDER STYLE */

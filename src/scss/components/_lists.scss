@@ -7,7 +7,7 @@ ul {
 
 li {
   list-style: disc;
-  margin-left: $medium;
+  margin-left: $type-medium;
   padding-left: 0;
 
   * + & {
@@ -15,6 +15,6 @@ li {
   }
 
   & + li {
-    margin-top: $small;
+    margin-top: $type-small;
   }
 }

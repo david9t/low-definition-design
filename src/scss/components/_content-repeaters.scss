@@ -24,7 +24,7 @@
     display: none;
     list-style: none;
     margin-left: 0;
-    margin-right: $small/$ratio;
+    margin-right: $type-small/$ratio;
     margin-top: 0;
 
     @include loose-spacing {
@@ -73,12 +73,12 @@
   }
 
   &__text {
-    font-size: $natural;
+    font-size: $layout-medium;
     line-height: 1.3;
   }
 
   &__footer {
-    margin-top: $medium;
+    margin-top: $type-medium;
     max-width: none;
 
     @include loose-spacing {
@@ -93,7 +93,7 @@
   }
 
   &__image {
-    height: $xxx-large;
+    height: $type-xxx-large;
     width: auto;
 
     @include loose-spacing {
@@ -103,17 +103,17 @@
 
   &__author {
     @include loose-spacing {
-      margin-right: $medium;
+      margin-right: $type-medium;
     }
 
     &-name {
-      font-size: $natural;
+      font-size: $layout-medium;
       font-style: normal;
       font-weight: bold;
     }
 
     &-description {
-      margin-top: $small;
+      margin-top: $type-small;
     }
   }
 }
@@ -184,7 +184,7 @@
   }
 
   &__icon {
-    height: $large;
+    height: $type-large;
     margin-top: 0;
   }
 
@@ -203,22 +203,22 @@
 
 .social-sharing {
   .btn {
-    margin-right: $small;
+    margin-right: $type-small;
 
     @include natural-spacing {
-      margin-right: $standard;
-      margin-top: $medium;
+      margin-right: $type-standard;
+      margin-top: $type-medium;
     }
 
     @include loose-spacing {
-      margin-right: $medium;
+      margin-right: $type-medium;
     }
   }
 
   &__icon {
     display: inline-block;
-    height: $standard;
-    margin-right: $small/$ratio;
+    height: $type-standard;
+    margin-right: $type-small/$ratio;
     margin-top: -0.2em;
     vertical-align: middle;
   }

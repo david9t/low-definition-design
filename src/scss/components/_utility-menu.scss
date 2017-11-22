@@ -29,10 +29,10 @@
   }
 
   &__menu-item {
-    font-size: $small;
+    font-size: $type-small;
     list-style: none;
     margin-left: 0;
-    margin-right: $medium;
+    margin-right: $type-medium;
     margin-top: 0;
 
     &:last-child {
@@ -46,12 +46,12 @@
   height: 100%;
 
   @include breakpoint-6 {
-    margin-top: $small + $small + $standard;
+    margin-top: $type-small + $type-small + $type-standard;
   }
 }
 
 .legal-footer {
-  margin-bottom: $small + $small + $standard;
+  margin-bottom: $type-small + $type-small + $type-standard;
 
   @include breakpoint-6 {
     margin-bottom: 0;
