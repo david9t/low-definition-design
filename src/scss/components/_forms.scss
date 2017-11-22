@@ -2,16 +2,16 @@
 
 form, fieldset {
   * + & {
-    margin-top: $loose;
+    margin-top: $layout-large;
   }
 
   & + * {
-    margin-top: $loose;
+    margin-top: $layout-large;
   }
 
   * + {
     & label, & h1, & h2, & h3, & h4, & h5, & h6 {
-      margin-top: $loose;
+      margin-top: $layout-large;
     }
   }
 }
@@ -21,17 +21,17 @@ fieldset {
 }
 
 * + legend {
-  margin-top: $medium;
+  margin-top: $type-medium;
 }
 
 input, label {
   display: block;
-  font-size: $standard;
+  font-size: $type-standard;
 }
 
 label {
   & + p {
-    margin-top: $tight;
+    margin-top: $layout-tight;
   }
 }
 
@@ -39,33 +39,33 @@ input, textarea, select {
   border: 1px solid #888;
   font-family: $base-font-family;
   font-size: 1em;
-  margin-top: $small;
-  padding: $small;
+  margin-top: $type-small;
+  padding: $type-small;
   width: 100%;
 
   & + .small, & + p {
-    margin-top: $tight;
+    margin-top: $layout-tight;
   }
 
   &[type="radio"], &[type="checkbox"] {
     display: inline-block;
-    height: $base;
-    margin-right: $small;
-    margin-top: $small;
+    height: $layout-base;
+    margin-right: $type-small;
+    margin-top: $type-small;
     vertical-align: middle;
-    width: $base;
+    width: $layout-base;
 
     & + label {
       display: inline-block;
-      margin-top: $small;
+      margin-top: $type-small;
       vertical-align: middle;
     }
 
     & + p {
       display: inline-block;
       left: 0;
-      margin-right: $base;
-      margin-top: $small;
+      margin-right: $layout-base;
+      margin-top: $type-small;
       vertical-align: middle;
     }
   }

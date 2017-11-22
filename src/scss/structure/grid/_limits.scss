@@ -13,18 +13,18 @@
   }
 
   &.grid--tight-spacing {
-    margin-left: -$tight;
+    margin-left: -$layout-tight;
 
     > .grid__item {
-      padding-left: $tight;
+      padding-left: $layout-tight;
     }
   }
 
   &.grid--base-spacing {
-    margin-left: -$base;
+    margin-left: -$layout-base;
 
     > .grid__item {
-      padding-left: $base;
+      padding-left: $layout-base;
     }
   }
 }

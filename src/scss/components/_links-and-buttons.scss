@@ -22,7 +22,7 @@ a {
 
 button {
   background: none;
-  font-size: $standard;
+  font-size: $type-standard;
 }
 
 .btn, button {
@@ -34,7 +34,7 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: $small;
+  padding: $type-small;
   width: 100%;
 
   &:visited {
@@ -59,7 +59,7 @@ button {
   }
 
   @include breakpoint-3 {
-    padding: $small $medium;
+    padding: $type-small $type-medium;
   }
 
   @include natural-spacing {
@@ -68,7 +68,7 @@ button {
   }
 
   form & {
-    margin-top: $large;
+    margin-top: $type-large;
   }
 }
 
@@ -77,10 +77,10 @@ button {
 
 .btn {
   &--secondary {
-    font-size: $small;
+    font-size: $type-small;
 
     & + .btn--secondary {
-      margin-left: $small;
+      margin-left: $type-small;
     }
   }
 }

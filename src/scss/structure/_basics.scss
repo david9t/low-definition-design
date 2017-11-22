@@ -14,8 +14,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  max-width: $ratio * 80em;
-  padding: $luxury $base;
+  max-width: 80em;
+  padding: $layout-x-large $layout-base;
   position: relative;
 }
 
@@ -44,22 +44,22 @@ body {
   }
 
   * + & {
-    margin-top: $loose;
+    margin-top: $layout-large;
   }
 
   & + * {
-    margin-top: $loose;
+    margin-top: $layout-large;
   }
 
   .container {
-    padding-bottom: $loose;
-    padding-top: $loose;
+    padding-bottom: $layout-large;
+    padding-top: $layout-large;
   }
 
   &--card {
     .container {
-      padding-bottom: $base;
-      padding-top: $base;
+      padding-bottom: $layout-base;
+      padding-top: $layout-base;
     }
   }
 }

@@ -39,39 +39,39 @@
     & * + {
       & h1, & h2, & h3, & h4, & h5, & h6 {
         & + p {
-          margin-top: $medium;
+          margin-top: $type-medium;
         }
       }
     }
   }
 
   .xxx-large {
-    font-size: $xxx-large * $ratio;
+    font-size: $type-xxx-large * $ratio;
     line-height: 1;
   }
 
   .xx-large {
-    font-size: $xxx-large;
+    font-size: $type-xxx-large;
     line-height: 1;
   }
 
   .x-large {
-    font-size: $xx-large;
+    font-size: $type-xx-large;
     line-height: 1.1;
   }
 
   h1, .large {
-    font-size: $x-large;
+    font-size: $type-x-large;
     line-height: 1.1;
   }
 
   h2, .medium {
-    font-size: $large;
+    font-size: $type-large;
     line-height: 1.2;
   }
 
   h3, .standard {
-    font-size: $medium;
+    font-size: $type-medium;
     line-height: 1.3;
   }
 }

@@ -7,25 +7,25 @@
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -$loose;
+  margin-top: -$layout-large;
 
   * + & {
     margin-top: 0;
   }
 
   & + * {
-    margin-top: $loose;
+    margin-top: $layout-large;
   }
 }
 
 .grid__item {
   list-style: none;
   margin-left: 0;
-  margin-top: $loose;
+  margin-top: $layout-large;
   padding-left: 0;
   width: 100%;
 
   fieldset & {
-    margin-top: $base;
+    margin-top: $layout-base;
   }
 }

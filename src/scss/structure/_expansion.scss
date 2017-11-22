@@ -5,14 +5,14 @@
 
 @include natural-spacing {
   .container {
-    padding-left: $natural;
-    padding-right: $natural;
+    padding-left: $layout-medium;
+    padding-right: $layout-medium;
   }
 
   .block--card {
     .container {
-      padding-bottom: $natural;
-      padding-top: $natural;
+      padding-bottom: $layout-medium;
+      padding-top: $layout-medium;
     }
   }
 }
@@ -23,22 +23,22 @@
 @include loose-spacing {
 
   .container {
-    padding-left: $loose;
-    padding-right: $loose;
+    padding-left: $layout-large;
+    padding-right: $layout-large;
   }
 
   .grid {
-    margin-left: -$loose;
+    margin-left: -$layout-large;
 
     > .grid__item {
-      padding-left: $loose;
+      padding-left: $layout-large;
     }
   }
 
   .block {
     .container {
-      padding-bottom: $loose;
-      padding-top: $loose;
+      padding-bottom: $layout-large;
+      padding-top: $layout-large;
     }
   }
 }
@@ -50,23 +50,23 @@
 
   .section {
     > .container {
-      padding-left: $luxury;
-      padding-right: $luxury;
+      padding-left: $layout-x-large;
+      padding-right: $layout-x-large;
     }
   }
 
   .grid {
     &--luxury-spacing, &--oversized-spacing, &--supersized-spacing {
-      margin-left: -$luxury;
-      margin-top: -$luxury;
+      margin-left: -$layout-x-large;
+      margin-top: -$layout-x-large;
 
       & + * {
-        margin-top: $luxury;
+        margin-top: $layout-x-large;
       }
 
       > .grid__item {
-        margin-top: $luxury;
-        padding-left: $luxury;
+        margin-top: $layout-x-large;
+        padding-left: $layout-x-large;
       }
     }
   }
@@ -78,7 +78,7 @@
   .block {
     &--luxury-spacing, &--oversized-spacing, &--supersized-spacing {
       > .container {
-        padding: $luxury;
+        padding: $layout-x-large;
       }
     }
   }
@@ -89,12 +89,12 @@
 
 @include breakpoint-16 {
   * + * {
-    margin-top: $natural;
+    margin-top: $layout-medium;
   }
 
   .grid__item {
     fieldset & {
-      margin-top: $natural;
+      margin-top: $layout-medium;
     }
   }
 }
@@ -106,22 +106,22 @@
 
   .section {
     > .container {
-      padding-left: $oversized;
-      padding-right: $oversized;
+      padding-left: $layout-xx-large;
+      padding-right: $layout-xx-large;
     }
 
     &--oversized-spacing, &--supersized-spacing {
       > .container {
-        padding-bottom: $oversized;
-        padding-top: $oversized;
+        padding-bottom: $layout-xx-large;
+        padding-top: $layout-xx-large;
 
         > .block {
           * + & {
-            margin-top: $luxury;
+            margin-top: $layout-x-large;
           }
 
           & + * {
-            margin-top: $luxury;
+            margin-top: $layout-x-large;
           }
         }
       }
@@ -130,16 +130,16 @@
 
   .grid {
     &--oversized-spacing, &--supersized-spacing {
-      margin-left: -$oversized;
-      margin-top: -$oversized;
+      margin-left: -$layout-xx-large;
+      margin-top: -$layout-xx-large;
 
       & + * {
-        margin-top: $oversized;
+        margin-top: $layout-xx-large;
       }
 
       > .grid__item {
-        margin-top: $oversized;
-        padding-left: $oversized;
+        margin-top: $layout-xx-large;
+        padding-left: $layout-xx-large;
       }
     }
   }
@@ -151,15 +151,15 @@
   .block {
     &--oversized-spacing, &--supersized-spacing {
       > .container {
-        padding: $oversized;
+        padding: $layout-xx-large;
 
         > .block {
           * + & {
-            margin-top: $luxury;
+            margin-top: $layout-x-large;
           }
 
           & + * {
-            margin-top: $luxury;
+            margin-top: $layout-x-large;
           }
         }
       }
@@ -174,22 +174,22 @@
 
   .section {
     > .container {
-      padding-left: $supersized;
-      padding-right: $supersized;
+      padding-left: $layout-xxx-large;
+      padding-right: $layout-xxx-large;
     }
 
     &--supersized-spacing {
       > .container {
-        padding-bottom: $supersized;
-        padding-top: $supersized;
+        padding-bottom: $layout-xxx-large;
+        padding-top: $layout-xxx-large;
 
         > .block {
           * + & {
-            margin-top: $oversized;
+            margin-top: $layout-xx-large;
           }
 
           & + * {
-            margin-top: $oversized;
+            margin-top: $layout-xx-large;
           }
         }
       }
@@ -198,16 +198,16 @@
 
   .grid {
     &--supersized-spacing {
-      margin-left: -$supersized;
-      margin-top: -$supersized;
+      margin-left: -$layout-xxx-large;
+      margin-top: -$layout-xxx-large;
 
       & + * {
-        margin-top: $supersized;
+        margin-top: $layout-xxx-large;
       }
 
       > .grid__item {
-        margin-top: $supersized;
-        padding-left: $supersized;
+        margin-top: $layout-xxx-large;
+        padding-left: $layout-xxx-large;
       }
     }
   }
@@ -219,15 +219,15 @@
   .block {
     &--supersized-spacing {
       > .container {
-        padding: $supersized;
+        padding: $layout-xxx-large;
 
         > .block {
           * + & {
-            margin-top: $oversized;
+            margin-top: $layout-xx-large;
           }
 
           & + * {
-            margin-top: $oversized;
+            margin-top: $layout-xx-large;
           }
         }
       }
