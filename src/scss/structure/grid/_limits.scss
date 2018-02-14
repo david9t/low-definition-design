@@ -6,24 +6,30 @@
 .grid {
   &.grid--no-spacing {
     margin-left: 0;
+    margin-top: $layout-large;
 
     > .grid__item {
+      margin-top: 0;
       padding-left: 0;
     }
   }
 
   &.grid--tight-spacing {
     margin-left: -$layout-tight;
+    margin-top: $layout-large - $layout-tight;
 
     > .grid__item {
+      margin-top: $layout-tight;
       padding-left: $layout-tight;
     }
   }
 
   &.grid--base-spacing {
     margin-left: -$layout-base;
+    margin-top: $layout-large - $layout-base;
 
     > .grid__item {
+      margin-top: $layout-base;
       padding-left: $layout-base;
     }
   }
