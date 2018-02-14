@@ -29,3 +29,9 @@
     margin-top: $layout-base;
   }
 }
+
+.grid--consistent-height-rows {
+  .block {
+    height: 100%;
+  }
+}
