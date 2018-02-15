@@ -49,6 +49,20 @@
       margin-top: $layout-large - $layout-base;
     }
   }
+  
+  &.grid--natural-spacing {
+    margin-left: -$layout-medium;
+    margin-top: -$layout-medium;
+
+    > .grid__item {
+      margin-top: $layout-medium;
+      padding-left: $layout-medium;
+    }
+
+    * + & {
+      margin-top: $layout-large - $layout-medium;
+    }
+  }
 }
 
 /* LIMITING GRID WIDTHS */
